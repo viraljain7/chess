@@ -6,6 +6,36 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+  <style>
+    .chessboard {
+      display: grid;
+      grid-template-columns: repeat(8, 50px);
+      grid-template-rows: repeat(8, 50px);
+      width: 400px;
+      height: 400px;
+    }
+    .square {
+      width: 50px;
+      height: 50px;
+    }
+    .light {
+      background-color: #f0d9b5;
+    }
+    .dark {
+      background-color: #b58863;
+    }
+    .piece {
+      font-size: 40px;
+      text-align: center;
+      line-height: 50px;
+    }
+    .piece.white {
+      color: white;
+    }
+    .piece.black {
+      color: black;
+    }
+  </style>
   <body>
     <div class="w-full h-screen bg-zinc-900 flex items-center justify-center">
       <div class="chessboard w-96 h-96 bg-red-800"></div>
